@@ -1,0 +1,26 @@
+{
+  "name": "app-cliente",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo src/main.js:build.js -o -l",
+    "build": "browserify src/main.js -o build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "vue": "^2.3.2",
+    "vue-router": "^2.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "budo": "^10.0.3",
+    "vueify": "^9.4.1"
+  },
+  "browserify": {
+    "transform": ["vueify"]
+  }
+}
