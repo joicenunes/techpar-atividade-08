@@ -2,10 +2,11 @@ const Vue = require('vue');
 const VueRouter = require('vue-router');
 Vue.use(VueRouter);
 
-const router = new VueRouter([
+const router = new VueRouter({
+  routes: [
   { path: '/listar', component: require("./listar.vue")},
   { path: '/salvar', component: require("./salvar.vue")}
-])
+]})
 
 //view-model
 const app = new Vue({

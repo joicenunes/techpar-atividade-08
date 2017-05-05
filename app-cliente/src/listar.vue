@@ -17,7 +17,10 @@
 <style></style>
 
 <template>
-  <ul>
-    <li v-for="c in contatos">{{ c.nomecontato }}</li>
-  </ul>
+  <div>
+    Oi!
+    <ul>
+      <li v-for="c in contatos">{{ c.nomecontato }} | {{ c.telefonecontato }}</li>
+    </ul>
+  </div>
 </template>
